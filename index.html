@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="mainDiv">
+            <h1>その動物は……？</h1>
+
+            <div class="buttonDiv">
+                <button onclick="ansStart()" id="ansStartButton">はじめる</button>
+            </div>
+
+            <div id="resultArea">
+                <div class="imgBox">
+                    <img id="resultImg" class="result_img" src="./img/img1.jpg" alt="result">
+                </div>
+                <h2 id="resultHead"></h2>
+                <p id="answer"></p>
+            </div>
+
+            <div id="ansArea">
+                <!-- 問題文 -->
+                <h2 id="question"></h2>
+                <p id="question_supplement"></p>
+                <!-- 回答ボタン-->
+                <div class="ansAreaButtons">
+                    <button onclick="ansButton(0)" id="answerButton1">YES</button>
+                    <button onclick="ansButton(1)" id="answerButton2">NO</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
